@@ -3,5 +3,4 @@
 This is a simple collaborative application we used with Meteor.
 
 ###Authors:
-Bryan Butteling
-Eleazar Corpuz
+Bryan Butteling, Eleazar Corpuz
