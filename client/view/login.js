@@ -1,3 +1,13 @@
+Template.LandingPageLayout.events({
+  'click #logout': function() {
+    Meteor.logout();
+  }
+});
+
+Accounts.onLogin(function() {
+  Router.go('/home');
+});
+
 // Template.posts.rendered = function(){
 
 // };
