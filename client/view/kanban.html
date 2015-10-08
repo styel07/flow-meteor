@@ -1,4 +1,10 @@
 <template name="ApplicationLayout">
-    <h1>Flow - Kanban</h1>
     {{> yield}}
+</template>
+
+<template name="kanbanLayout">
+    <h1>Flow - Kanban</h1>
+    {{#if currentUser}}
+    <p><button id="logout">Logout</button></p>
+    {{/if}}
 </template>

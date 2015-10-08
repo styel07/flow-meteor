@@ -10,6 +10,18 @@
 
 // };
 
+//adds event to logout button that allows users to logout
+Template.kanbanLayout.events({
+  'click #logout': function() {
+    Router.go('/');
+    Meteor.logout();
+  }
+});
+
+Accounts.onLogin(function() {
+  Router.go('/home');
+});
+
 // Template.login.events({
 //   'submit form' : function (e, t) {
 //     e.preventDefault();
