@@ -20,6 +20,8 @@ Accounts.onLogin(function() {
 
 // };
 
+//adds event to logout button that allows users to logout
+
 // Template.login.events({
 //   'submit form' : function (e, t) {
 //     e.preventDefault();
