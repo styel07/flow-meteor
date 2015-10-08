@@ -2,7 +2,7 @@ Router.configure({
   layoutTemplate : 'ApplicationLayout'
 });
 
-Router.route('/', function(){
+Router.route('/', function() {
   this.render('LandingPageLayout');
 });
 
