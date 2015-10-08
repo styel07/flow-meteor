@@ -22,3 +22,5 @@ iron:router
 accounts-password
 useraccounts:core
 useraccounts:foundation
+fourseven:scss
+ewall:foundation

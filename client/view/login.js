@@ -1,11 +1,12 @@
-Template.LandingPageLayout.events({
+Template.dashboard.events({
   'click #logout' : function() {
+    Router.go('/');
     Meteor.logout();
   }
 });
 
 Accounts.onLogin(function() {
-  Router.go('/home');
+  Router.go('/dashboard');
 });
 
 

@@ -3,9 +3,9 @@ Router.configure({
 });
 
 Router.route('/', function() {
-  this.render('LandingPageLayout');
+  this.render('LoginPage');
 });
 
-Router.route('/home', function() {
-  this.render('kanbanLayout');
+Router.route('/dashboard', function() {
+  this.render('dashboard');
 });
