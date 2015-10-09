@@ -1,6 +1,9 @@
+<!-- Template of a ticket that is appended to the kanban html -->
 <template name='ticketItem'>
   Title: <span>{{title}}</span> <br>
   Description: <span>{{description}}</span>
+  <!-- hidden columnId value  -->
+  <span hidden>{{columnId}}</span>
   <!-- buttons  -->
   <button id="lessThan"> &lt; </button>
   <button id="greaterThan"> &gt; </button>

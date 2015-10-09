@@ -1,6 +1,18 @@
 Template.dashboard.helpers({
-  getAllTickets : function() {
-    return Tickets.find();
+  getToDo : function() {
+    return Tickets.find({ columnId : 0 });
+  }
+});
+
+Template.dashboard.helpers({
+  getProgress : function() {
+    return Tickets.find({ columnId : 1 });
+  }
+});
+
+Template.dashboard.helpers({
+  getDone : function() {
+    return Tickets.find({ columnId : 2 });
   }
 });
 
