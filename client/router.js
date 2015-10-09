@@ -11,3 +11,5 @@ Router.route('/dashboard', function() {
 });
 
 Router.route('/ticket', { name : 'newTicket'});
+
+Router.route('/profile', { name : 'userProfile'});

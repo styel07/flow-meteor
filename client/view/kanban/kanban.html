@@ -6,11 +6,6 @@
   <body>
     <header>
       <h1>Flow - Kanban</h1>
-      {{#if currentUser}}
-      <p>
-        <button id="logout">Logout</button>
-      </p>
-      {{/if}}
     </header>
     <div id="kanban-board">
       <!-- This is the Kanban -->
@@ -21,8 +16,8 @@
           <section class="column-container" id="toDo">
               <h1>To Do</h1>
               <div>
-              {{#each getAllTickets}}
-                {{>ticketItem}}
+              {{#each getToDo}}
+                {{ > ticketItem}}
               {{/each}}
               </div>
             </section>
@@ -31,7 +26,11 @@
                   <!--    This is the in progress section   -->
           <section class="column-container" id="inProgress">
               <h1>Progress</h1>
-              <span></span>
+              <div>
+              {{#each getProgress}}
+                {{ > ticketItem}}
+              {{/each}}
+              </div>
           </section>
 
           </div>
@@ -39,7 +38,11 @@
                   <!--    This is the done section   -->
           <section class="column-container" id="done">
               <h1>Done</h1>
-              <span></span>
+              <div>
+              {{#each getDone}}
+                {{ > ticketItem}}
+              {{/each}}
+              </div>
           </section>
         </div>
         <!--    This is the call to action button   -->
