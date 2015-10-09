@@ -1,13 +1,15 @@
-Template.dashboard.events({
+// logs user out and redirects them to login page
+Template.userProfile.events({
   'click #logout' : function() {
     Router.go('/');
     Meteor.logout();
   }
 });
 
-// Accounts.onLogin(function() {
-//   Router.go('/dashboard');
-// });
+// on login redirects the user to the dashboard
+Accounts.onLogin(function() {
+  Router.go('/dashboard');
+});
 
 
 // Template.posts.rendered = function(){

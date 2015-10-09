@@ -3,7 +3,7 @@ Router.configure({
 });
 
 Router.route('/', function() {
-  this.render('dashboard');
+  this.render('LoginPage');
 });
 
 Router.route('/dashboard', function() {

@@ -17,9 +17,9 @@ Template.dashboard.helpers({
 });
 
 Template.dashboard.events({
-  'click #newTicketButton' : function() {
-   Router.go('/ticket');
- }
+  'click #profileButton' : function() {
+    Router.go('/profile');
+  }
 });
 
 Template.dashboard.events({
@@ -38,4 +38,10 @@ Template.dashboard.events({
       Tickets.update(this._id, { $inc : {columnId : 1}});
     }
   }
+});
+
+Template.dashboard.events({
+  'click #newTicketButton' : function() {
+   Router.go('/ticket');
+ }
 });
