@@ -1,6 +1,9 @@
 <!-- Template of a ticket that is appended to the kanban html -->
 <template name='ticketItem'>
   Title: <span>{{title}}</span> <br>
+
+  <!--   This button triggers triggers the Template.ticketItem.events on newTicket.js -->
+  Id:<button id="delete_ticket"> X </button> <br>
   Description: <span>{{description}}</span>
   <!-- hidden columnId value  -->
   <span hidden>{{columnId}}</span>
