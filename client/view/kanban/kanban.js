@@ -16,6 +16,12 @@ Template.dashboard.helpers({
   }
 });
 
+Template.dashboard.helpers({
+  userWelcome : function() {
+    return Meteor.user().emails[0].address;
+  }
+});
+
 Template.dashboard.events({
   'click #profileButton' : function() {
     Router.go('/profile');
