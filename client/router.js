@@ -3,9 +3,11 @@ Router.configure({
 });
 
 Router.route('/', function() {
-  this.render('LoginPage');
+  this.render('dashboard');
 });
 
 Router.route('/dashboard', function() {
   this.render('dashboard');
 });
+
+Router.route('/ticket', { name : 'newTicket'});

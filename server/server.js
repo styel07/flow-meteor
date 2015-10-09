@@ -1,5 +1,5 @@
 Meteor.startup(function () {
-  if (Posts.find().count() === 0) {
+  if (User.find().count() === 0) {
     var names = [{title : "What is HTML?",
                   body : "WTF is HTML anyways..."
                  },
@@ -11,7 +11,7 @@ Meteor.startup(function () {
                  }
                 ];
     for (var i = 0; i < names.length; i++){
-      Posts.insert({title : names[i].title, body: names[i].body, score: 0});
+      User.insert({title : names[i].title, body: names[i].body});
     }
   }
 });
