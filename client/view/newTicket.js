@@ -3,8 +3,8 @@
 Template.newTicket.events({
   'click #Submit' : function(event, template) {
     Tickets.insert({
-        title : template.find('#title').value,
-        description : template.find('#description').value
+      title : template.find('#title').value,
+      description : template.find('#description').value
     });
   }
 });

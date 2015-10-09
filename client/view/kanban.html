@@ -14,37 +14,42 @@
     </header>
     <div id="kanban-board">
       <!-- This is the Kanban -->
-    <div class="row">
-      <div class="large-4 columns">
-        <!--    This is the To Do section   -->
-        <section class="column-container" id="toDo">
-            <h1>To Do</h1>
-            <div>
-            {{#each getAllTickets}}
-              {{>ticketItem}}
-            {{/each}}
-            </div>
+      <div class="row">
+        <div class="large-4 columns">
+
+          <!--    This is the To Do section   -->
+          <section class="column-container" id="toDo">
+              <h1>To Do</h1>
+              <div>
+              {{#each getAllTickets}}
+                {{>ticketItem}}
+              {{/each}}
+              </div>
+            </section>
+          </div>
+          <div class="large-4 columns">
+                  <!--    This is the in progress section   -->
+          <section class="column-container" id="inProgress">
+              <h1>Progress</h1>
+              <span></span>
+          </section>
+
+          </div>
+          <div class="large-4 columns">
+                  <!--    This is the done section   -->
+          <section class="column-container" id="done">
+              <h1>Done</h1>
+              <span></span>
           </section>
         </div>
-        <div class="large-4 columns">
-                <!--    This is the in progress section   -->
-        <section class="column-container" id="inProgress">
-            <h1>Progress</h1>
-            <span></span>
-        </section>
-
-        </div>
-        <div class="large-4 columns">
-                <!--    This is the done section   -->
-        <section class="column-container" id="done">
-            <h1>Done</h1>
-            <span></span>
-        </section>
-
+        <!--    This is the call to action button   -->
       </div>
-    </div>
 
-
+      <div id="row">
+        <div class="large-12 columns">
+          <button id="newTicketButton">Create New Ticket</button>
+        </div>
+      </div>
 
     </div>
   </body>
