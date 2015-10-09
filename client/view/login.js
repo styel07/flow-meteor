@@ -5,9 +5,9 @@ Template.dashboard.events({
   }
 });
 
-Accounts.onLogin(function() {
-  Router.go('/dashboard');
-});
+// Accounts.onLogin(function() {
+//   Router.go('/dashboard');
+// });
 
 
 // Template.posts.rendered = function(){
