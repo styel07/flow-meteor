@@ -17,10 +17,14 @@ button#delete_ticket {
   height: 15px;
 }
 
+h1 {
+  text-align: center;
+}
+
 // ============== Ticket Styles =================
 
 .ticket {
-  border : 1px soild black;
+  border : 1px solid black;
 
   #title {
 

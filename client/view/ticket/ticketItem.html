@@ -2,7 +2,7 @@
 <template name='ticketItem'>
 
   <!--   This row displays the title with state buttons -->
-  <div class="row">
+  <div class="row ticket">
 
     <!-- The lessThan button is displayed on the left of the title bar taking up 3 space -->
     <div class="large-3 columns">
@@ -15,22 +15,26 @@
     </div>
 
     <!-- The greaterThan button is displayed on the right of the title bar taking up 3 space -->
-    <div class="large-3 columns ticket">
+    <div class="large-3 columns">
       <button id="greaterThan"> &gt; </button>
     </div>
   </div>
 
   <!-- This row displays the description -->
   <div class="row">
-    <div class="large-12 columns ticket">
+    <div class="large-12 columns">
       <div id="description" class="ticket">{{description}}</div>
     </div>
   </div>
 
   <!-- This row displays the updatesTextbox -->
   <div class="row">
-    <div class="large-12 columns ticket">
-      <div id="updatesTextbox" class="ticket"></div>
+    <div class="large-12 columns">
+      <div id="updatesTextbox" class="ticket">
+        <textarea name="" id="" cols="30" rows="10">
+          This is the updates Textbox
+        </textarea>
+      </div>
     </div>
   </div>
 
@@ -43,10 +47,10 @@
 
   This row displays the user and delete button
   <div class="row">
-    <div class="large-5 columns ticket">
+    <div class="large-5 columns">
       <div id="user"></div>
     </div>
-    <div class="large-1 columns ticket">
+    <div class="large-1 columns">
       <!-- hidden columnId value  -->
       <span hidden>{{columnId}}</span>
     </div>
@@ -55,11 +59,6 @@
     <div class="large-6 columns ticket">
       <button id="delete_ticket"> Delete Ticket </button>
     </div>
-
   </div>
-
-
-
-
 
 </template>
