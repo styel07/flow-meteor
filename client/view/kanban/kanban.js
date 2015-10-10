@@ -52,6 +52,8 @@ Template.dashboard.events({
  }
 });
 
+// Ticket item Kanban
+
 Template.ticketItem.events({
   'click #btnUpdate' : function(event, template) {
     console.log(template.find('#updatesTextbox').value);
