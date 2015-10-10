@@ -55,11 +55,11 @@ Template.dashboard.events({
 // Ticket item Kanban
 
 Template.ticketItem.events({
-  'click #btnUpdate' : function(event, template) {
-    console.log(template.find('#updatesTextbox').value);
+  'click button' : function(event, template) {
+    event.preventDefault();
     Tickets.update(this._id,{
         $push :{
-          updates : template.find('#updatesTextbox').value,
+          updates : template.find('textarea').value,
         }
       }
     );
@@ -71,3 +71,5 @@ Template.ticketItem.events({
     Tickets.remove( { _id : this._id } );
   }
 });
+
+// $(e.target).find('#accounts-username').val(),
