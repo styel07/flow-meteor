@@ -1,15 +1,43 @@
 @import "_settings";
 @import ".meteor/local/build/programs/server/assets/packages/matthew_foundation5-sass/foundation";
 
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 100%;
+}
+.site-footer {
+  background: #eee;
+}
 // ============== Kanban Dashboard Styles =================
 
 #kanban-board {
-  border: 1px solid black;
+  // border: 1px solid black;
+}
+#at-btn{ // ============================================================== I MADE THIS!!!
+  background-color: lavender;
+  color: #000;
+  position: absolute;
+  right: 850px; //kasi
+  border: 3px dashed lime;
 }
 
 // ============== Kanban Ticket Area Styles =================
 #ticket-container {
-  // border: 2px solid black;
+  // border: 4px solid black;
 }
 
 .column-container {

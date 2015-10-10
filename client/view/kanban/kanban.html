@@ -19,6 +19,13 @@
           <!--    This is the To Do section   -->
           <section class="column-container" id="toDo">
               <h1>To Do</h1>
+
+              <div id="row">
+                <div class="large-12 columns">
+                  <button id="newTicketButton" >Create New Ticket</button>
+                </div>
+              </div>
+
               <div id="ticket-container">
               {{#each getToDo}}
                 {{ > ticketItem}}
@@ -51,14 +58,11 @@
         </div>
         <!--    This is the call to action button   -->
       </div>
-
-      <div id="row">
-        <div class="large-12 columns">
-          <button id="newTicketButton">Create New Ticket</button>
-        </div>
-      </div>
-
     </div>
+
+    <footer class="site-footer">
+      Hi I'm Sticky Footer
+    </footer>
     {{initFoundation}}
   </body>
 </template>
