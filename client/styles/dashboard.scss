@@ -9,12 +9,16 @@
 
 // ============== Kanban Ticket Area Styles =================
 #ticket-container {
-  border: 2px solid black;
+  // border: 2px solid black;
+}
+
+.column-container {
+  text-align: center;
 }
 
 button#delete_ticket {
-  width: 15px;
-  height: 15px;
+  // width: 15px;
+  // height: 15px;
 }
 
 h1 {
@@ -27,6 +31,7 @@ h1 {
   border : 1px solid black;
 
   #title {
+    text-align: center;
 
   }
 
@@ -35,6 +40,8 @@ h1 {
   }
 
   #updatesTextbox {
+    height: 50px;
+    width: 50px;
 
   }
 

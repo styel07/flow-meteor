@@ -5,58 +5,66 @@
   <div class="row ticket">
 
     <!-- The lessThan button is displayed on the left of the title bar taking up 3 space -->
-    <div class="large-3 columns">
+    <div class="large-3 medium-3 columns">
       <button id="lessThan"> &lt; </button>
     </div>
 
     <!-- The area is for the title bar taking up 6 space -->
-    <div class="large-6 columns">
+    <div class="large-6 medium-6 columns">
       <div id="title" class="ticket">{{title}}</div>
     </div>
 
     <!-- The greaterThan button is displayed on the right of the title bar taking up 3 space -->
-    <div class="large-3 columns">
+    <div class="large-3 medium-3 columns">
+
       <button id="greaterThan"> &gt; </button>
     </div>
   </div>
 
   <!-- This row displays the description -->
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-12 medium-12 columns">
       <div id="description" class="ticket">{{description}}</div>
+    </div>
+  </div>
+
+<!-- This row will display updates from our database -->
+  <div class="row">
+    <div class="large-12 medium-12 columns">
+      <div id="updates" class="ticket">{{updates}}</div>
     </div>
   </div>
 
   <!-- This row displays the updatesTextbox -->
   <div class="row">
-    <div class="large-12 columns">
-      <div id="updatesTextbox" class="ticket">
-        <textarea name="" id="" cols="30" rows="10">
-          This is the updates Textbox
-        </textarea>
+    <div class="large-12 medium-12 columns">
+      <div class="ticket">
+        <textarea id="updatesTextbox" cols='20' rows='20'></textarea>
       </div>
     </div>
   </div>
 
   <!--   This row displays the updatesButtons -->
   <div class="row">
-    <div class="large-12 columns ticket">
-      <div id="updatesButton"></div>
+    <div class="large-12 medium-12 columns">
+      <div id="updatesButton" class="ticket">
+        <button id="btnUpdate">Update</button>
+      </div>
     </div>
   </div>
 
-  This row displays the user and delete button
+  <!-- This row displays the user and delete button -->
   <div class="row">
-    <div class="large-5 columns">
+    <div class="large-5 medium-5 columns">
       <div id="user"></div>
     </div>
-    <div class="large-1 columns">
+    <div class="large-1 medium-1 columns">
       <!-- hidden columnId value  -->
       <span hidden>{{columnId}}</span>
     </div>
 
     <!--   This button triggers triggers the Template.ticketItem.events on newTicket.js -->
-    <div class="large-6 columns ticket">
+    <div class="large-6 medium-6 columns">
       <button id="delete_ticket"> Delete Ticket </button>
     </div>
   </div>
