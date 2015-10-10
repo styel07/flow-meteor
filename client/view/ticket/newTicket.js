@@ -6,7 +6,8 @@ Template.newTicket.events({
     Tickets.insert({
       title : template.find('#title').value,
       description : template.find('#description').value,
-      columnId : 0
+      columnId : 0,
+      updates : []
     });
     Router.go('/dashboard');
   }
