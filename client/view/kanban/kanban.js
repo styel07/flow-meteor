@@ -51,3 +51,11 @@ Template.dashboard.events({
    Router.go('/ticket');
  }
 });
+
+Template.ticketItem.events({
+  'click #delete_ticket' : function(event,template) {
+    event.preventDefault();
+    console.log('HERE!!!!!!!!!!!: ', this._id);
+    Tickets.remove( { _id : this._id } );
+  }
+});

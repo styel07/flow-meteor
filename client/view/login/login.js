@@ -12,18 +12,6 @@ Accounts.onLogin(function() {
 });
 
 
-// Template.posts.rendered = function(){
-
-// };
-
-// Template.posts.created = function(){
-
-// };
-
-// Template.posts.destroyed = function(){
-
-// };
-
 //adds event to logout button that allows users to logout
 
 // Template.login.events({

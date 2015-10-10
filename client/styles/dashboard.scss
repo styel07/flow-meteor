@@ -1,11 +1,44 @@
 @import "_settings";
 @import ".meteor/local/build/programs/server/assets/packages/matthew_foundation5-sass/foundation";
 
+// ============== Kanban Dashboard Styles =================
+
 #kanban-board {
   border: 1px solid black;
+}
+
+// ============== Kanban Ticket Area Styles =================
+#ticket-container {
+  border: 2px solid black;
 }
 
 button#delete_ticket {
   width: 15px;
   height: 15px;
+}
+
+// ============== Ticket Styles =================
+
+.ticket {
+  border : 1px soild black;
+
+  #title {
+
+  }
+
+  #description {
+
+  }
+
+  #updatesTextbox {
+
+  }
+
+  #updatesButton {
+
+  }
+
+  #user {
+
+  }
 }

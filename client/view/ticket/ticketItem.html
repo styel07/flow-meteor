@@ -1,13 +1,65 @@
 <!-- Template of a ticket that is appended to the kanban html -->
 <template name='ticketItem'>
-  Title: <span>{{title}}</span> <br>
 
-  <!--   This button triggers triggers the Template.ticketItem.events on newTicket.js -->
-  Id:<button id="delete_ticket"> X </button> <br>
-  Description: <span>{{description}}</span>
-  <!-- hidden columnId value  -->
-  <span hidden>{{columnId}}</span>
-  <!-- buttons  -->
-  <button id="lessThan"> &lt; </button>
-  <button id="greaterThan"> &gt; </button>
+  <!--   This row displays the title with state buttons -->
+  <div class="row">
+
+    <!-- The lessThan button is displayed on the left of the title bar taking up 3 space -->
+    <div class="large-3 columns">
+      <button id="lessThan"> &lt; </button>
+    </div>
+
+    <!-- The area is for the title bar taking up 6 space -->
+    <div class="large-6 columns">
+      <div id="title" class="ticket">{{title}}</div>
+    </div>
+
+    <!-- The greaterThan button is displayed on the right of the title bar taking up 3 space -->
+    <div class="large-3 columns ticket">
+      <button id="greaterThan"> &gt; </button>
+    </div>
+  </div>
+
+  <!-- This row displays the description -->
+  <div class="row">
+    <div class="large-12 columns ticket">
+      <div id="description" class="ticket">{{description}}</div>
+    </div>
+  </div>
+
+  <!-- This row displays the updatesTextbox -->
+  <div class="row">
+    <div class="large-12 columns ticket">
+      <div id="updatesTextbox" class="ticket"></div>
+    </div>
+  </div>
+
+  <!--   This row displays the updatesButtons -->
+  <div class="row">
+    <div class="large-12 columns ticket">
+      <div id="updatesButton"></div>
+    </div>
+  </div>
+
+  This row displays the user and delete button
+  <div class="row">
+    <div class="large-5 columns ticket">
+      <div id="user"></div>
+    </div>
+    <div class="large-1 columns ticket">
+      <!-- hidden columnId value  -->
+      <span hidden>{{columnId}}</span>
+    </div>
+
+    <!--   This button triggers triggers the Template.ticketItem.events on newTicket.js -->
+    <div class="large-6 columns ticket">
+      <button id="delete_ticket"> Delete Ticket </button>
+    </div>
+
+  </div>
+
+
+
+
+
 </template>

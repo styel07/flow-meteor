@@ -19,7 +19,7 @@
           <!--    This is the To Do section   -->
           <section class="column-container" id="toDo">
               <h1>To Do</h1>
-              <div>
+              <div id="ticket-container">
               {{#each getToDo}}
                 {{ > ticketItem}}
               {{/each}}
@@ -59,6 +59,6 @@
       </div>
 
     </div>
-    {{iniFoundation}}
+    {{initFoundation}}
   </body>
 </template>
