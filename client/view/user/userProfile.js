@@ -3,7 +3,7 @@ Template.userProfile.events({
   'click #userSubmit' : function(event, template) {
     event.preventDefault();
     //Updates the profile information based on the email and password input
-    console.log('HELO',template.find('#emails').value);
+    // console.log('HELO',template.find('#emails').value);
     Meteor.users.update(
       Meteor.userId(),
         { $set :

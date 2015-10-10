@@ -53,6 +53,16 @@ Template.dashboard.events({
 });
 
 Template.ticketItem.events({
+  'click #btnUpdate' : function(event, template) {
+    console.log(template.find('#updatesTextbox').value);
+    Tickets.update(this._id,{
+        $push :{
+          updates : template.find('#updatesTextbox').value,
+        }
+      }
+    );
+  },
+
   'click #delete_ticket' : function(event,template) {
     event.preventDefault();
     console.log('HERE!!!!!!!!!!!: ', this._id);
