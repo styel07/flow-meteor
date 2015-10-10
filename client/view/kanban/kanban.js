@@ -55,11 +55,11 @@ Template.dashboard.events({
 // Ticket item Kanban
 
 Template.ticketItem.events({
-  'click #btnUpdate' : function(event, template) {
-    console.log(this.updates);
-    Tickets.update(this._id, {
+  'click button' : function(event, template) {
+    event.preventDefault();
+    Tickets.update(this._id,{
         $push :{
-          updates : template.find('#updatesTextbox').value,
+          updates : template.find('textarea').value,
         }
       }
     );
