@@ -56,8 +56,8 @@ Template.dashboard.events({
 
 Template.ticketItem.events({
   'click #btnUpdate' : function(event, template) {
-    console.log(template.find('#updatesTextbox').value);
-    Tickets.update(this._id,{
+    console.log(this.updates);
+    Tickets.update(this._id, {
         $push :{
           updates : template.find('#updatesTextbox').value,
         }
