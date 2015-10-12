@@ -5,9 +5,32 @@
   margin: 0;
 }
 html, body {
-  //background-image: url("https://c2.staticflickr.com/8/7340/9123976391_82af016f77.jpg");
   height: 100%;
 }
+
+// ============== Header =================
+header {
+  background-color: #333;
+  h1 {
+    color : #2976AF;
+    text-shadow: 2px 2px #eee;
+  }
+
+  h3 {
+    color : #eee;
+  }
+
+  a#profileButton {
+    color : #eee;
+    &:hover {
+      color : #00AF83;
+    }
+  }
+}
+
+
+// ============== Footer =================
+
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
@@ -20,20 +43,23 @@ html, body {
 .site-footer, .page-wrap:after {
   height: 100%;
 }
-.site-footer {
-  background: #eee;
+footer {
+  background-color: #333;
+  color : #eee;
 }
+
 // ============== Kanban Dashboard Styles =================
 
 #kanban-board {
-  // border: 1px solid black;
+  background-color: #eee;
 }
-#at-btn{ // ============================================================== I MADE THIS!!!
+
+#at-btn{
   background-color: lavender;
   color: #000;
   position: absolute;
-  right: 850px; //kasi
-  border: 3px dashed lime;
+  right: 830px;
+  border: 3px dashed #333;
 }
 
 // ============== Kanban Ticket Area Styles =================
@@ -45,13 +71,19 @@ html, body {
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+}
+
 button#delete_ticket {
   // width: 15px;
   // height: 15px;
 }
 
-h1 {
-  text-align: center;
+button#newTicketButton {
+  height : 20px;
+  width : 20px;
+  padding : 5px;
 }
 
 // ============== Ticket Styles =================
@@ -70,7 +102,6 @@ h1 {
   #updatesTextbox {
     height: 50px;
     max-width : 100%;
-
   }
 
   #updatesButton {
@@ -80,6 +111,13 @@ h1 {
   #user {
 
   }
+}
+
+// =========================== Kanban Ticket ==========================
+
+.textArea[rows] {
+  height: 50px;
+  max-width: 100%;
 }
 
 // =========================== Login Page ==========================
